@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@hono/trpc-server':
-        specifier: ^0.3.1
-        version: 0.3.1(@trpc/server@11.0.0-rc.390)(hono@4.4.3)
+        specifier: ^0.4.0
+        version: 0.4.2(@trpc/server@11.0.0-rc.390)(hono@4.4.3)
       '@trpc/client':
         specifier: 11.0.0-rc.390
         version: 11.0.0-rc.390(@trpc/server@11.0.0-rc.390)
@@ -373,12 +373,12 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
-  '@hono/trpc-server@0.3.1':
-    resolution: {integrity: sha512-2FgDUv6ngrDA8pu/hb8hTqUyEgsT7PbYriTVKJoYxlqW8nnCqubruZ/14IQ/MCkBPXKVefnqUCJNAytW1Su++A==}
+  '@hono/trpc-server@0.4.2':
+    resolution: {integrity: sha512-3TDrc42CZLgcTFkXQba+y7JlRWRiyw1AqhLqztWyNS2IFT+3bHld0lxKdGBttCtGKHYx0505dM67RMazjhdZqw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
-      '@trpc/server': ^10.10.0
-      hono: '>=4.*'
+      '@trpc/server': ^10.10.0 || >11.0.0-rc
+      hono: '>=4.0.0'
 
   '@jest/schemas@29.6.3':
     resolution: {integrity: sha512-mo5j5X+jIZmJQveBKeS/clAueipV7KgiX1vMgCxam1RNYiqE1w62n0/tJJnHtjW8ZHcQco5gY85jA3mi0L+nSA==}
@@ -1210,7 +1210,7 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
-  '@hono/trpc-server@0.3.1(@trpc/server@11.0.0-rc.390)(hono@4.4.3)':
+  '@hono/trpc-server@0.4.2(@trpc/server@11.0.0-rc.390)(hono@4.4.3)':
     dependencies:
       '@trpc/server': 11.0.0-rc.390
       hono: 4.4.3
